@@ -33,7 +33,7 @@ A more realistic estimate might be $500 million to $1 billion annually for a com
 
 ## The Balance Sheet Matters
 
-There's also an interesting accounting distinction here between capital expenditures and operating expenses. The $5.5 million figure describes the marginal cost of one training run using already-purchased hardware. But that's like saying it only costs $50 in electricity to drive a Ferrari from New York to Boston, ignoring the $300,000 you spent buying the car.
+There's also an interesting accounting distinction here between capital expenditures and operating expenses. The $5.5 million figure describes the marginal cost of one training run using already-purchased hardware. But that's like saying it only costs $50 in petrol to drive a Ferrari from New York to Boston, ignoring the $300,000 you spent buying the car.
 
 DeepSeek is reportedly using H800 GPUs, which are "nerfed" versions of Nvidia's H100s created specifically for the Chinese market to comply with U.S. export controls. These GPUs have some limitations on communication speeds between chips, but their raw computing power remains largely intact. Various estimates put DeepSeek's GPU inventory at somewhere between 20,000 and 50,000 A100 equivalents - a substantial asset that would cost billions to acquire at market rates.
 
