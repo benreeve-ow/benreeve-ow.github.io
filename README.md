@@ -1,4 +1,4 @@
-# My Tech Blog
+# Sometimes Models Just Do Things
 
 A Jekyll-based blog about industry developments, experiments, testing new tools, and tutorials.
 
