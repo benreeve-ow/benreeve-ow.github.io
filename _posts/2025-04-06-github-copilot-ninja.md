@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Becoming a GitHub Copilot Ninja"
-date: 2023-04-07
+date: 2025-04-06
 categories: tutorials
 author: Ben Reeve
 ---
