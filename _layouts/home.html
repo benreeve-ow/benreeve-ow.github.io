@@ -1,0 +1,76 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    
+    <div class="category-filters">
+      <span>Filter by category:</span>
+      <a href="{{ site.baseurl }}/">All</a>
+      {% for category in site.categories %}
+        <a href="{{ site.baseurl }}/categories/{{ category[0] }}">{{ category[0] | capitalize }}</a>
+      {% endfor %}
+    </div>
+    
+    <ul class="post-list">
+      {%- for post in paginator.posts -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+        
+        {% if post.categories %}
+        <div class="post-categories">
+          <span>Categories:</span>
+          {% for category in post.categories %}
+          <span class="post-category">{{ category }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </li>
+      {%- endfor -%}
+    </ul>
+    
+    <!-- Pagination links -->
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | relative_url }}">Previous</a>
+      {% endif %}
+      
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+          <span class="current-page">{{ page }}</span>
+        {% else %}
+          {% if page == 1 %}
+            <a href="{{ '/' | relative_url }}">{{ page }}</a>
+          {% else %}
+            <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | relative_url }}">Next</a>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+</div> 

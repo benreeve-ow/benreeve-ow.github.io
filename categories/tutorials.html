@@ -1,0 +1,17 @@
+---
+layout: page
+title: Tutorials
+permalink: /categories/tutorials/
+---
+
+<div class="category-posts">
+  <h2>Posts in Tutorials</h2>
+  
+  {% for post in site.categories['tutorials'] %}
+    <article class="post-item">
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+      <div class="post-excerpt">{{ post.excerpt }}</div>
+    </article>
+  {% endfor %}
+</div> 
