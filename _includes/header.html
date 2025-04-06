@@ -1,7 +1,5 @@
 <header class="site-header" role="banner">
   <div class="wrapper">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
     <nav class="site-nav">
@@ -19,12 +17,6 @@
         <a class="page-link" href="{{ site.baseurl }}/categories/experiments">Experiments</a>
         <a class="page-link" href="{{ site.baseurl }}/categories/tools">Tools</a>
         <a class="page-link" href="{{ site.baseurl }}/categories/tutorials">Tutorials</a>
-        {%- for path in page_paths -%}
-          {%- assign my_page = site.pages | where: "path", path | first -%}
-          {%- if my_page.title and my_page.title != "404: Page not found" -%}
-          <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-          {%- endif -%}
-        {%- endfor -%}
       </div>
     </nav>
   </div>
