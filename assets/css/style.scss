@@ -1,0 +1,504 @@
+@import "minima";
+
+// Notion Blog-inspired styles
+
+// Colors
+:root {
+  --notion-black: #000;
+  --notion-white: #fff;
+  --notion-gray: #f7f6f3;
+  --notion-light-gray: #f7f7f7;
+  --notion-blue: #2382e2;
+  --notion-text: #37352f;
+  --notion-light-text: #6b6b6b;
+}
+
+// Typography
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  color: var(--notion-text);
+  line-height: 1.5;
+  background-color: var(--notion-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--notion-black);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.site-header {
+  border-top: 0;
+  border-bottom: 1px solid var(--notion-light-gray);
+  padding: 1.5rem 0;
+}
+
+.site-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.03em;
+}
+
+.site-nav {
+  float: right;
+  line-height: 2;
+  
+  .page-link {
+    color: var(--notion-text);
+    margin-left: 1.5rem;
+    font-size: 0.95rem;
+    
+    &:hover {
+      text-decoration: none;
+      color: var(--notion-blue);
+    }
+  }
+}
+
+// Posts list
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-left: 0;
+  list-style: none;
+  
+  li {
+    margin-bottom: 0;
+    background: var(--notion-white);
+    border: 1px solid var(--notion-light-gray);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    }
+  }
+  
+  h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    
+    .post-link {
+      color: var(--notion-black);
+      
+      &:hover {
+        color: var(--notion-blue);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  color: var(--notion-light-text);
+}
+
+.post-categories {
+  margin-top: 1rem;
+  
+  .post-category {
+    display: inline-block;
+    background: var(--notion-gray);
+    padding: 0.2rem 0.7rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+// Home intro
+.home-intro {
+  background-color: var(--notion-gray);
+  padding: 4rem 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  border-radius: 8px;
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: var(--notion-light-text);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+// Category filters
+.category-filters {
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+  
+  span {
+    margin-right: 0.7rem;
+    font-weight: 500;
+  }
+  
+  a {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    margin-right: 0.5rem;
+    background: var(--notion-gray);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--notion-text);
+    transition: background-color 0.2s;
+    
+    &:hover {
+      background-color: darken(#f7f6f3, 5%);
+      text-decoration: none;
+    }
+  }
+}
+
+// Single post
+.post {
+  max-width: 800px;
+  margin: 0 auto;
+  
+  .post-header {
+    margin-bottom: 2.5rem;
+    
+    .post-title {
+      font-size: 2.5rem;
+      line-height: 1.2;
+    }
+  }
+  
+  .post-content {
+    font-size: 1.1rem;
+    
+    p, ul, ol {
+      margin-bottom: 1.5rem;
+    }
+    
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 3rem;
+    }
+    
+    h3 {
+      font-size: 1.4rem;
+      margin-top: 2.5rem;
+    }
+    
+    img {
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    pre, code {
+      border-radius: 4px;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    }
+  }
+}
+
+// Footer
+.site-footer {
+  border-top: 1px solid var(--notion-light-gray);
+  padding: 2rem 0;
+  
+  .footer-heading {
+    font-size: 1.2rem;
+  }
+  
+  .footer-col-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--notion-light-text);
+  }
+  
+  .footer-col {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-list,
+  .social-media-list {
+    list-style: none;
+    margin-left: 0;
+  }
+}
+
+// Pagination
+.pagination {
+  margin: 2rem 0;
+  text-align: center;
+  
+  a, .current-page {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0 0.2rem;
+    border: 1px solid var(--notion-light-gray);
+    border-radius: 4px;
+    
+    &:hover {
+      background: var(--notion-gray);
+      text-decoration: none;
+    }
+  }
+  
+  .current-page {
+    font-weight: bold;
+    background: var(--notion-gray);
+  }
+}
+
+// Category pages
+.category-posts {
+  h2 {
+    margin-bottom: 2rem;
+  }
+  
+  .post-item {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--notion-light-gray);
+    
+    &:last-child {
+      border-bottom: none;
+    }
+    
+    h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+    
+    .post-meta {
+      margin-bottom: 1rem;
+    }
+    
+    .post-excerpt {
+      color: var(--notion-light-text);
+    }
+  }
+}
+
+// Responsive adjustments
+@media screen and (max-width: 600px) {
+  .post-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .home-intro {
+    padding: 2rem 1rem;
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+  }
+  
+  .post .post-header .post-title {
+    font-size: 2rem;
+  }
+}
+
+// 404 page
+.container {
+  h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  a {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background: var(--notion-gray);
+    border-radius: 4px;
+    font-weight: 500;
+    
+    &:hover {
+      background: darken(#f7f6f3, 5%);
+      text-decoration: none;
+    }
+  }
+}
+
+// Category page styling
+.category-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.category-header {
+  background-color: var(--notion-gray);
+  padding: 3rem 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  border-radius: 8px;
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.7rem;
+    margin-top: 0;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: var(--notion-light-text);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.post-author {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--notion-light-text);
+}
+
+.post-excerpt {
+  margin-top: 0.7rem;
+  color: var(--notion-light-text);
+  line-height: 1.5;
+}
+
+.category-nav {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  
+  .back-link {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background: var(--notion-gray);
+    border-radius: 4px;
+    font-weight: 500;
+    
+    &:hover {
+      background: darken(#f7f6f3, 5%);
+      text-decoration: none;
+    }
+  }
+}
+
+// Post list styling for home page
+.post-list-wrapper {
+  margin-bottom: 3rem;
+}
+
+// Additional footer styling
+.footer-bottom {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--notion-light-gray);
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--notion-light-text);
+}
+
+.category-list {
+  list-style: none;
+  margin-left: 0;
+  
+  li {
+    margin-bottom: 0.5rem;
+    
+    a {
+      color: var(--notion-light-text);
+      
+      &:hover {
+        color: var(--notion-blue);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// Headings in footer
+.footer-col h3 {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+// Single post page
+.post-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.post-navigation {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--notion-light-gray);
+  
+  .back-to-blog {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background: var(--notion-gray);
+    border-radius: 4px;
+    font-weight: 500;
+    
+    &:hover {
+      background: darken(#f7f6f3, 5%);
+      text-decoration: none;
+    }
+  }
+}
+
+// Code blocks
+pre, code {
+  background-color: #f6f8fa;
+  border: 1px solid #eaeaea;
+}
+
+pre {
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  overflow-x: auto;
+  
+  code {
+    border: none;
+    background: none;
+  }
+}
+
+// Blockquotes
+blockquote {
+  color: var(--notion-light-text);
+  border-left: 4px solid var(--notion-light-gray);
+  padding-left: 1.5rem;
+  font-style: italic;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 2rem;
+}
+
+// Lists
+ul, ol {
+  margin-bottom: 2rem;
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+} 

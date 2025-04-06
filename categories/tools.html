@@ -1,17 +1,29 @@
 ---
-layout: page
+layout: default
 title: Tools
 permalink: /categories/tools/
 ---
 
-<div class="category-posts">
-  <h2>Posts in Tools</h2>
+<div class="category-page">
+  <div class="category-header">
+    <h1>{{ page.title }}</h1>
+    <p>Reviews and guides for developer tools and productivity software</p>
+  </div>
   
-  {% for post in site.categories['tools'] %}
-    <article class="post-item">
-      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-      <div class="post-excerpt">{{ post.excerpt }}</div>
-    </article>
-  {% endfor %}
+  <div class="category-posts">
+    {% for post in site.categories['tools'] %}
+      <article class="post-item">
+        <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <div class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</div>
+        {% if post.author %}
+          <div class="post-author">{{ post.author }}</div>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+  
+  <div class="category-nav">
+    <a href="{{ site.baseurl }}/" class="back-link">← Back to all posts</a>
+  </div>
 </div> 

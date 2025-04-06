@@ -1,5 +1,5 @@
-title: My Tech Blog
-description: A blog about industry developments, experiments, new tools, and tutorials
+title: Tools & Craft
+description: Thoughts on industry developments, experiments, new tools, and tutorials
 baseurl: ""
 url: ""
 
@@ -11,12 +11,18 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
 
+# Show post excerpts on the home page
+show_excerpts: true
+
 # Categories
 categories: [industry-developments, experiments, tools, tutorials]
 
 # Pagination
-paginate: 5
+paginate: 6
 paginate_path: "/page:num/"
+
+# Excerpt separator
+excerpt_separator: <!--more-->
 
 # Exclude files from processing
 exclude:
