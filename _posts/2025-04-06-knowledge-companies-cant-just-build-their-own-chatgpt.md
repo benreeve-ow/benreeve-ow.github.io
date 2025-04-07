@@ -46,17 +46,9 @@ Your in-house system, meanwhile, will visibly struggle with transitions between 
 
 The same applies to financial analysis. A bank's proprietary AI might promise sophisticated market insights, but if it's noticeably worse than what a client can access through a commercial API, the premium mystique evaporates. 
 
-## Goldman Sachs Does Not Want To Be Told Its Proprietary Trading Algorithm Is Just A Kid In A Hoodie
-
-This situation has created fascinating corporate identity crises. Financial institutions that have spent decades branding themselves as technology companies now face the prospect of admitting they can't build AI tools competitive with actual technology companies. Law firms that have invested millions in "proprietary legal tech" must confront the possibility that their custom-built systems are demonstrably inferior to publicly available alternatives.
-
-The knowledge workers themselves are experiencing their own vertigo. The junior investment banker who spent three days building a DCF model watches ChatGPT produce a comparable analysis in 30 seconds. The associate attorney who spent a week researching precedents finds Claude has already compiled them, with citations.
-
-Of course, they can point out flaws in the AI outputs—errors in the calculations, misinterpretations of precedents—but these feel increasingly like desperate rationalizations as the models improve. "It got the holding wrong in *Smith v. Jones*" feels less reassuring when the next version gets it right.
-
 ## The Three Options
 
-Knowledge economy companies essentially have three options, none particularly appealing:
+Knowledge economy companies essentially have three options:
 
 **1. Partner with the leaders.** Accept that building competitive AI tools requires resources beyond even large professional services firms, and negotiate special access to leading platforms. "We've integrated OpenAI's technology with our proprietary data" isn't as impressive as "we built our own AI," but it's better than "our AI is noticeably worse than what you're already using."
 
@@ -78,17 +70,11 @@ This creates a kind of Darwinian pressure on knowledge work itself. Tasks that c
 
 This has broader implications for how value is created and captured in the knowledge economy. We're seeing a pattern where companies with the resources to pay the "alignment tax" are capturing disproportionate value, while traditional knowledge firms are relegated to being implementation partners or value-added resellers.
 
-It's reminiscent of how cloud computing played out. Initially, many banks and law firms thought they needed to build their own secure cloud infrastructure. Most eventually realized that was economically irrational and shifted to using AWS with additional security layers. The winners weren't those who tried to out-AWS Amazon, but those who most quickly accepted reality and found where they could add unique value.
-
 The knowledge economy companies that will thrive aren't those building second-rate AI tools, but those who most quickly adapt to a world where the best AI tools are widely available—and find ways to create value around them rather than competing with them.
-
-Some hedge funds have already made this pivot successfully. Instead of trying to build better models than OpenAI, they're focusing on identifying the unique data sources and judgment calls where humans still have edge. The best law firms are reimagining their services assuming clients already have access to basic AI legal research.
 
 The alternative—pretending your homegrown AI is competitive when clients can directly compare it to ChatGPT—is a bit like claiming your in-house search engine is better than Google. It's theoretically possible, but extraordinarily unlikely, and making the claim damages your credibility on everything else.
 
 In the end, the knowledge economy isn't being replaced by AI—it's being reshaped by it. The value is shifting from information processing to judgment, from computation to wisdom, from tool-building to tool-wielding. That's a much more profound change than simply adding AI to the existing business model, and it requires rethinking what knowledge work actually is.
-
-Or as one hedge fund manager put it to me: "We're not in the prediction business anymore. We're in the judgment business. The models can predict. Humans still need to judge."
 
 [^1]: Large language models are basically systems trained to predict the next word in a sequence. Technically impressive, but left to their own devices, they'll happily suggest that the SEC requires disclosure of executive astrological signs in 10-Ks. Alignment is the process of making them not do that.
 
