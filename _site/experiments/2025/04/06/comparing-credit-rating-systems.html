@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Comparing Credit Rating Systems: Deep Research vs. DeepCredit v0.1</title><meta name="generator" content="Jekyll v3.9.5">
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Sometimes Models Just Do Things" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Comparing Credit Rating Systems: Deep Research vs. DeepCredit v0.1 | Sometimes Models Just Do Things</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Comparing Credit Rating Systems: Deep Research vs. DeepCredit v0.1" />
+<meta name="author" content="Ben Reeve" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Experiment Overview I recently conducted an experiment comparing OpenAI’s Deep Research feature against the first version of my custom-built “DeepCredit” agent for generating credit rating reports. As part of the Data and Analytics team working to advance our AI capabilities, I wanted to benchmark these two approaches to understand their relative strengths and potential for credit analysis. The experiment focused on generating comprehensive credit rating reports for Trafigura Group’s senior unsecured long-term debt using publicly available information. Both systems produced complete reports that were then evaluated by an independent OpenAI model (“o1”) against standardized criteria. Agent Architecture and Capabilities DeepCredit v0.1 My DeepCredit agent was built using the OpenAI Agents SDK with a multi-agent architecture. The system employs an orchestrated workflow where specialized agents work together iteratively: Knowledge Gap Agent: Analyzes current research state and identifies gaps Tool Selector Agent: Determines which tools to use for addressing specific gaps Tool Agents: Specialized for executing research actions: Web Search Agent Website Crawler Agent Writer Agent: Synthesizes findings into a coherent report In its current v0.1 state, DeepCredit can only scrape websites for information, with limited RAG capabilities and no PDF parsing functionality. OpenAI Deep Research OpenAI’s Deep Research is a more mature implementation with enhanced capabilities: Trained using reinforcement fine-tuning Equipped with browser access for real-time information gathering Closed system with no visibility into its underlying architecture Evaluation Methodology Both systems were tasked with the same assignment: produce a comprehensive credit rating report for Trafigura Group. The resulting reports were then evaluated against three key criteria: Quality of Information (35 points): Breadth and depth of data, clarity of financial metrics Quality of the Report (35 points): Organization, thoroughness, overall presentation Justification of the Final Rating (30 points): How convincingly the report explains the assigned rating Results Analysis Report Structure and Scope DeepCredit v0.1 produced a well-organized report with six key segments: Methodology &amp; Rationale Data Gathering &amp; Analysis Risk &amp; Creditworthiness Information Gaps Final Credit Rating Detailed Report Structure The report stayed at a moderate level of detail, with concise summaries and a numbered reference list for citations. OpenAI Deep Research delivered a comprehensive narrative that closely mirrored professional rating agency reports. It provided detailed explanation of methodologies, granular financial metrics, thorough risk assessment, and extensive rating justification with industry benchmarking. Information Quality DeepCredit v0.1 (scored 25/35): Cited key high-level figures (e.g., adjusted debt-to-equity ratio of -0.43x) Referenced fraud losses and legal issues Provided general information on liquidity and credit facilities Lacked granular ratio calculations and detailed analysis OpenAI Deep Research (scored 33/35): Incorporated detailed metrics (e.g., total debt breakdown, revenue trends from $318B to $244B) Calculated key financial ratios (debt-to-EBITDA, EBITDA/interest coverage) Drew explicit comparisons to industry peers like Glencore and Bunge Expanded on ESG factors, governance, compliance issues, and event risks Provided historical context and forward-looking analysis Report Quality DeepCredit v0.1 (scored 25/35): Clear structure with well-organized sections Suitable for quick reading with bullet points Remained somewhat templated and outline-level “Detailed Report Structure” section was more of a skeleton than a complete analysis OpenAI Deep Research (scored 33/35): Logical narrative flow from methodology to final conclusion Extensive use of subheadings and bullet points Effectively tied data to rating rationale Thorough explanation of each dimension of credit risk Professional-quality analysis similar to formal rating agency reports Rating Justification Both systems assigned Trafigura a BBB+ rating with a stable outlook, with similar core justifications: Strong liquidity via large credit facilities Sizable equity base and ongoing profitability Recent fraud losses and legal issues as manageable concerns Inherent volatility in commodity trading However, the depth of justification differed significantly: DeepCredit v0.1 (scored 20/30): Succinct explanation with high-level bullet points Brief mentions of strengths and weaknesses Limited detail on how specific metrics supported the rating OpenAI Deep Research (scored 27/30): Multiple paragraphs of detailed rating rationale Benchmarked against known rating agency frameworks Explained how specific financial metrics translated into the BBB+ rating Provided in-depth reasoning for why the rating wasn’t higher or lower Overall Scoring DeepCredit v0.1: ~70-75/100 OpenAI Deep Research: ~93/100 Key Findings and Implications The experiment clearly demonstrated that OpenAI’s Deep Research feature significantly outperformed DeepCredit v0.1. This outcome, while not unexpected given the relative maturity of the systems, raises important questions about the current state and future potential of AI in credit analysis: Information Depth is Critical: The ability to gather, synthesize, and present detailed financial data and contextual information dramatically enhances the credibility of credit assessments. Narrative Structure Matters: The OpenAI Deep Research report’s cohesive narrative flow made complex financial information more accessible and convincing compared to the more segmented approach of DeepCredit. Comparative Analysis Adds Value: Explicit benchmarking against industry peers and rating frameworks significantly strengthens rating justifications. Potential for AI in Credit Analysis: The quality of the OpenAI Deep Research report suggests that with proper prompt engineering, AI systems may already be approaching reliability for preliminary credit assessments. Next Research Steps Based on these findings, I’ve identified several promising avenues for advancing our AI-powered credit analysis capabilities: Explore OpenAI Deep Research’s Full Potential: While Deep Research is a closed product that can’t be modified internally, we can experiment with more sophisticated prompting strategies to optimize its credit analysis capabilities. Establish Robust Evaluation Framework: Set up comprehensive evaluation protocols using OpenAI Deep Research and actual credit rating agency reports as benchmarks, with an LLM judge comparing them against standardized scoring criteria. Enhance DeepCredit’s Tooling: Add PDF parsing and code interpreter capabilities to enable DeepCredit to work with a broader range of financial documents and perform quantitative analysis. Refine Agent System Prompts: Systematically improve the prompts for each agent in the DeepCredit architecture to measure incremental performance gains. Experiment with Fine-Tuning: Begin testing fine-tuning approaches for individual agents using existing tools to improve specialized performance. Explore End-to-End Fine-Tuning: Request research access to OpenAI’s Reinforcement Fine-Tuning API (which was used to train OpenAI’s Deep Research) to potentially implement end-to-end fine-tuning of the entire agentic workflow. Conclusion This experiment provides valuable insights into the current state and future potential of AI-powered credit analysis. While DeepCredit v0.1 demonstrates promise as a structured approach to credit research, the superior performance of OpenAI’s Deep Research highlights both the challenges ahead and the considerable potential for AI in this domain. The next phase of research will focus on narrowing this performance gap by enhancing DeepCredit’s capabilities and exploring more sophisticated prompting strategies for Deep Research. The end goal remains developing reliable AI-powered credit analysis tools that can support our organization’s financial decision-making processes with comprehensive, well-reasoned assessments." />
+<meta property="og:description" content="Experiment Overview I recently conducted an experiment comparing OpenAI’s Deep Research feature against the first version of my custom-built “DeepCredit” agent for generating credit rating reports. As part of the Data and Analytics team working to advance our AI capabilities, I wanted to benchmark these two approaches to understand their relative strengths and potential for credit analysis. The experiment focused on generating comprehensive credit rating reports for Trafigura Group’s senior unsecured long-term debt using publicly available information. Both systems produced complete reports that were then evaluated by an independent OpenAI model (“o1”) against standardized criteria. Agent Architecture and Capabilities DeepCredit v0.1 My DeepCredit agent was built using the OpenAI Agents SDK with a multi-agent architecture. The system employs an orchestrated workflow where specialized agents work together iteratively: Knowledge Gap Agent: Analyzes current research state and identifies gaps Tool Selector Agent: Determines which tools to use for addressing specific gaps Tool Agents: Specialized for executing research actions: Web Search Agent Website Crawler Agent Writer Agent: Synthesizes findings into a coherent report In its current v0.1 state, DeepCredit can only scrape websites for information, with limited RAG capabilities and no PDF parsing functionality. OpenAI Deep Research OpenAI’s Deep Research is a more mature implementation with enhanced capabilities: Trained using reinforcement fine-tuning Equipped with browser access for real-time information gathering Closed system with no visibility into its underlying architecture Evaluation Methodology Both systems were tasked with the same assignment: produce a comprehensive credit rating report for Trafigura Group. The resulting reports were then evaluated against three key criteria: Quality of Information (35 points): Breadth and depth of data, clarity of financial metrics Quality of the Report (35 points): Organization, thoroughness, overall presentation Justification of the Final Rating (30 points): How convincingly the report explains the assigned rating Results Analysis Report Structure and Scope DeepCredit v0.1 produced a well-organized report with six key segments: Methodology &amp; Rationale Data Gathering &amp; Analysis Risk &amp; Creditworthiness Information Gaps Final Credit Rating Detailed Report Structure The report stayed at a moderate level of detail, with concise summaries and a numbered reference list for citations. OpenAI Deep Research delivered a comprehensive narrative that closely mirrored professional rating agency reports. It provided detailed explanation of methodologies, granular financial metrics, thorough risk assessment, and extensive rating justification with industry benchmarking. Information Quality DeepCredit v0.1 (scored 25/35): Cited key high-level figures (e.g., adjusted debt-to-equity ratio of -0.43x) Referenced fraud losses and legal issues Provided general information on liquidity and credit facilities Lacked granular ratio calculations and detailed analysis OpenAI Deep Research (scored 33/35): Incorporated detailed metrics (e.g., total debt breakdown, revenue trends from $318B to $244B) Calculated key financial ratios (debt-to-EBITDA, EBITDA/interest coverage) Drew explicit comparisons to industry peers like Glencore and Bunge Expanded on ESG factors, governance, compliance issues, and event risks Provided historical context and forward-looking analysis Report Quality DeepCredit v0.1 (scored 25/35): Clear structure with well-organized sections Suitable for quick reading with bullet points Remained somewhat templated and outline-level “Detailed Report Structure” section was more of a skeleton than a complete analysis OpenAI Deep Research (scored 33/35): Logical narrative flow from methodology to final conclusion Extensive use of subheadings and bullet points Effectively tied data to rating rationale Thorough explanation of each dimension of credit risk Professional-quality analysis similar to formal rating agency reports Rating Justification Both systems assigned Trafigura a BBB+ rating with a stable outlook, with similar core justifications: Strong liquidity via large credit facilities Sizable equity base and ongoing profitability Recent fraud losses and legal issues as manageable concerns Inherent volatility in commodity trading However, the depth of justification differed significantly: DeepCredit v0.1 (scored 20/30): Succinct explanation with high-level bullet points Brief mentions of strengths and weaknesses Limited detail on how specific metrics supported the rating OpenAI Deep Research (scored 27/30): Multiple paragraphs of detailed rating rationale Benchmarked against known rating agency frameworks Explained how specific financial metrics translated into the BBB+ rating Provided in-depth reasoning for why the rating wasn’t higher or lower Overall Scoring DeepCredit v0.1: ~70-75/100 OpenAI Deep Research: ~93/100 Key Findings and Implications The experiment clearly demonstrated that OpenAI’s Deep Research feature significantly outperformed DeepCredit v0.1. This outcome, while not unexpected given the relative maturity of the systems, raises important questions about the current state and future potential of AI in credit analysis: Information Depth is Critical: The ability to gather, synthesize, and present detailed financial data and contextual information dramatically enhances the credibility of credit assessments. Narrative Structure Matters: The OpenAI Deep Research report’s cohesive narrative flow made complex financial information more accessible and convincing compared to the more segmented approach of DeepCredit. Comparative Analysis Adds Value: Explicit benchmarking against industry peers and rating frameworks significantly strengthens rating justifications. Potential for AI in Credit Analysis: The quality of the OpenAI Deep Research report suggests that with proper prompt engineering, AI systems may already be approaching reliability for preliminary credit assessments. Next Research Steps Based on these findings, I’ve identified several promising avenues for advancing our AI-powered credit analysis capabilities: Explore OpenAI Deep Research’s Full Potential: While Deep Research is a closed product that can’t be modified internally, we can experiment with more sophisticated prompting strategies to optimize its credit analysis capabilities. Establish Robust Evaluation Framework: Set up comprehensive evaluation protocols using OpenAI Deep Research and actual credit rating agency reports as benchmarks, with an LLM judge comparing them against standardized scoring criteria. Enhance DeepCredit’s Tooling: Add PDF parsing and code interpreter capabilities to enable DeepCredit to work with a broader range of financial documents and perform quantitative analysis. Refine Agent System Prompts: Systematically improve the prompts for each agent in the DeepCredit architecture to measure incremental performance gains. Experiment with Fine-Tuning: Begin testing fine-tuning approaches for individual agents using existing tools to improve specialized performance. Explore End-to-End Fine-Tuning: Request research access to OpenAI’s Reinforcement Fine-Tuning API (which was used to train OpenAI’s Deep Research) to potentially implement end-to-end fine-tuning of the entire agentic workflow. Conclusion This experiment provides valuable insights into the current state and future potential of AI-powered credit analysis. While DeepCredit v0.1 demonstrates promise as a structured approach to credit research, the superior performance of OpenAI’s Deep Research highlights both the challenges ahead and the considerable potential for AI in this domain. The next phase of research will focus on narrowing this performance gap by enhancing DeepCredit’s capabilities and exploring more sophisticated prompting strategies for Deep Research. The end goal remains developing reliable AI-powered credit analysis tools that can support our organization’s financial decision-making processes with comprehensive, well-reasoned assessments." />
+<link rel="canonical" href="http://localhost:4000/experiments/2025/04/06/comparing-credit-rating-systems.html" />
+<meta property="og:url" content="http://localhost:4000/experiments/2025/04/06/comparing-credit-rating-systems.html" />
+<meta property="og:site_name" content="Sometimes Models Just Do Things" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-04-06T00:00:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Comparing Credit Rating Systems: Deep Research vs. DeepCredit v0.1" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ben Reeve"},"dateModified":"2025-04-06T00:00:00+01:00","datePublished":"2025-04-06T00:00:00+01:00","description":"Experiment Overview I recently conducted an experiment comparing OpenAI’s Deep Research feature against the first version of my custom-built “DeepCredit” agent for generating credit rating reports. As part of the Data and Analytics team working to advance our AI capabilities, I wanted to benchmark these two approaches to understand their relative strengths and potential for credit analysis. The experiment focused on generating comprehensive credit rating reports for Trafigura Group’s senior unsecured long-term debt using publicly available information. Both systems produced complete reports that were then evaluated by an independent OpenAI model (“o1”) against standardized criteria. Agent Architecture and Capabilities DeepCredit v0.1 My DeepCredit agent was built using the OpenAI Agents SDK with a multi-agent architecture. The system employs an orchestrated workflow where specialized agents work together iteratively: Knowledge Gap Agent: Analyzes current research state and identifies gaps Tool Selector Agent: Determines which tools to use for addressing specific gaps Tool Agents: Specialized for executing research actions: Web Search Agent Website Crawler Agent Writer Agent: Synthesizes findings into a coherent report In its current v0.1 state, DeepCredit can only scrape websites for information, with limited RAG capabilities and no PDF parsing functionality. OpenAI Deep Research OpenAI’s Deep Research is a more mature implementation with enhanced capabilities: Trained using reinforcement fine-tuning Equipped with browser access for real-time information gathering Closed system with no visibility into its underlying architecture Evaluation Methodology Both systems were tasked with the same assignment: produce a comprehensive credit rating report for Trafigura Group. The resulting reports were then evaluated against three key criteria: Quality of Information (35 points): Breadth and depth of data, clarity of financial metrics Quality of the Report (35 points): Organization, thoroughness, overall presentation Justification of the Final Rating (30 points): How convincingly the report explains the assigned rating Results Analysis Report Structure and Scope DeepCredit v0.1 produced a well-organized report with six key segments: Methodology &amp; Rationale Data Gathering &amp; Analysis Risk &amp; Creditworthiness Information Gaps Final Credit Rating Detailed Report Structure The report stayed at a moderate level of detail, with concise summaries and a numbered reference list for citations. OpenAI Deep Research delivered a comprehensive narrative that closely mirrored professional rating agency reports. It provided detailed explanation of methodologies, granular financial metrics, thorough risk assessment, and extensive rating justification with industry benchmarking. Information Quality DeepCredit v0.1 (scored 25/35): Cited key high-level figures (e.g., adjusted debt-to-equity ratio of -0.43x) Referenced fraud losses and legal issues Provided general information on liquidity and credit facilities Lacked granular ratio calculations and detailed analysis OpenAI Deep Research (scored 33/35): Incorporated detailed metrics (e.g., total debt breakdown, revenue trends from $318B to $244B) Calculated key financial ratios (debt-to-EBITDA, EBITDA/interest coverage) Drew explicit comparisons to industry peers like Glencore and Bunge Expanded on ESG factors, governance, compliance issues, and event risks Provided historical context and forward-looking analysis Report Quality DeepCredit v0.1 (scored 25/35): Clear structure with well-organized sections Suitable for quick reading with bullet points Remained somewhat templated and outline-level “Detailed Report Structure” section was more of a skeleton than a complete analysis OpenAI Deep Research (scored 33/35): Logical narrative flow from methodology to final conclusion Extensive use of subheadings and bullet points Effectively tied data to rating rationale Thorough explanation of each dimension of credit risk Professional-quality analysis similar to formal rating agency reports Rating Justification Both systems assigned Trafigura a BBB+ rating with a stable outlook, with similar core justifications: Strong liquidity via large credit facilities Sizable equity base and ongoing profitability Recent fraud losses and legal issues as manageable concerns Inherent volatility in commodity trading However, the depth of justification differed significantly: DeepCredit v0.1 (scored 20/30): Succinct explanation with high-level bullet points Brief mentions of strengths and weaknesses Limited detail on how specific metrics supported the rating OpenAI Deep Research (scored 27/30): Multiple paragraphs of detailed rating rationale Benchmarked against known rating agency frameworks Explained how specific financial metrics translated into the BBB+ rating Provided in-depth reasoning for why the rating wasn’t higher or lower Overall Scoring DeepCredit v0.1: ~70-75/100 OpenAI Deep Research: ~93/100 Key Findings and Implications The experiment clearly demonstrated that OpenAI’s Deep Research feature significantly outperformed DeepCredit v0.1. This outcome, while not unexpected given the relative maturity of the systems, raises important questions about the current state and future potential of AI in credit analysis: Information Depth is Critical: The ability to gather, synthesize, and present detailed financial data and contextual information dramatically enhances the credibility of credit assessments. Narrative Structure Matters: The OpenAI Deep Research report’s cohesive narrative flow made complex financial information more accessible and convincing compared to the more segmented approach of DeepCredit. Comparative Analysis Adds Value: Explicit benchmarking against industry peers and rating frameworks significantly strengthens rating justifications. Potential for AI in Credit Analysis: The quality of the OpenAI Deep Research report suggests that with proper prompt engineering, AI systems may already be approaching reliability for preliminary credit assessments. Next Research Steps Based on these findings, I’ve identified several promising avenues for advancing our AI-powered credit analysis capabilities: Explore OpenAI Deep Research’s Full Potential: While Deep Research is a closed product that can’t be modified internally, we can experiment with more sophisticated prompting strategies to optimize its credit analysis capabilities. Establish Robust Evaluation Framework: Set up comprehensive evaluation protocols using OpenAI Deep Research and actual credit rating agency reports as benchmarks, with an LLM judge comparing them against standardized scoring criteria. Enhance DeepCredit’s Tooling: Add PDF parsing and code interpreter capabilities to enable DeepCredit to work with a broader range of financial documents and perform quantitative analysis. Refine Agent System Prompts: Systematically improve the prompts for each agent in the DeepCredit architecture to measure incremental performance gains. Experiment with Fine-Tuning: Begin testing fine-tuning approaches for individual agents using existing tools to improve specialized performance. Explore End-to-End Fine-Tuning: Request research access to OpenAI’s Reinforcement Fine-Tuning API (which was used to train OpenAI’s Deep Research) to potentially implement end-to-end fine-tuning of the entire agentic workflow. Conclusion This experiment provides valuable insights into the current state and future potential of AI-powered credit analysis. While DeepCredit v0.1 demonstrates promise as a structured approach to credit research, the superior performance of OpenAI’s Deep Research highlights both the challenges ahead and the considerable potential for AI in this domain. The next phase of research will focus on narrowing this performance gap by enhancing DeepCredit’s capabilities and exploring more sophisticated prompting strategies for Deep Research. The end goal remains developing reliable AI-powered credit analysis tools that can support our organization’s financial decision-making processes with comprehensive, well-reasoned assessments.","headline":"Comparing Credit Rating Systems: Deep Research vs. DeepCredit v0.1","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/experiments/2025/04/06/comparing-credit-rating-systems.html"},"url":"http://localhost:4000/experiments/2025/04/06/comparing-credit-rating-systems.html"}</script>
+<!-- End Jekyll SEO tag -->
+</head>
+  <body><header class="site-header" role="banner">
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="/">Sometimes Models Just Do Things</a>
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+      <label for="nav-trigger">
+        <span class="menu-icon">
+          <svg viewBox="0 0 18 15" width="18px" height="15px">
+            <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+          </svg>
+        </span>
+      </label>
+
+      <div class="trigger">
+        <a class="page-link" href="/categories/industry-developments">Industry Developments</a>
+        <a class="page-link" href="/categories/experiments">Experiments</a>
+        <a class="page-link" href="/categories/tools">Tools</a>
+        <a class="page-link" href="/categories/tutorials">Tutorials</a>
+        <a class="page-link" href="/about/">About</a>
+      </div>
+    </nav>
+  </div>
+</header> <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="post-container">
+    <header class="post-header">
+      
+      <div class="post-categories">
+        
+        <span class="post-category">experiments</span>
+        
+      </div>
+      
+      
+      <h1 class="post-title p-name" itemprop="name headline">Comparing Credit Rating Systems: Deep Research vs. DeepCredit v0.1</h1>
+      
+      <div class="post-meta">
+        <time class="dt-published" datetime="2025-04-06T00:00:00+01:00" itemprop="datePublished">Apr 6, 2025
+        </time>• <span class="post-author" itemprop="author">Ben Reeve</span></div>
+    </header>
+
+    <div class="post-content e-content" itemprop="articleBody">
+      <p><img src="/assets/images/posts/5B53E370-ED59-4FC0-930C-850D5B2161AB.png" alt="Credit Rating Systems Comparison" class="align-center" style="max-width: 100%;" /></p>
+
+<h2 id="experiment-overview">Experiment Overview</h2>
+
+<p>I recently conducted an experiment comparing OpenAI’s Deep Research feature against the first version of my custom-built “DeepCredit” agent for generating credit rating reports. As part of the Data and Analytics team working to advance our AI capabilities, I wanted to benchmark these two approaches to understand their relative strengths and potential for credit analysis.</p>
+
+<p>The experiment focused on generating comprehensive credit rating reports for Trafigura Group’s senior unsecured long-term debt using publicly available information. Both systems produced complete reports that were then evaluated by an independent OpenAI model (“o1”) against standardized criteria.</p>
+
+<h2 id="agent-architecture-and-capabilities">Agent Architecture and Capabilities</h2>
+
+<h3 id="deepcredit-v01">DeepCredit v0.1</h3>
+
+<p>My DeepCredit agent was built using the OpenAI Agents SDK with a multi-agent architecture. The system employs an orchestrated workflow where specialized agents work together iteratively:</p>
+
+<ol>
+  <li><strong>Knowledge Gap Agent</strong>: Analyzes current research state and identifies gaps</li>
+  <li><strong>Tool Selector Agent</strong>: Determines which tools to use for addressing specific gaps</li>
+  <li><strong>Tool Agents</strong>: Specialized for executing research actions:
+    <ul>
+      <li>Web Search Agent</li>
+      <li>Website Crawler Agent</li>
+    </ul>
+  </li>
+  <li><strong>Writer Agent</strong>: Synthesizes findings into a coherent report</li>
+</ol>
+
+<p>In its current v0.1 state, DeepCredit can only scrape websites for information, with limited RAG capabilities and no PDF parsing functionality.</p>
+
+<h3 id="openai-deep-research">OpenAI Deep Research</h3>
+
+<p>OpenAI’s Deep Research is a more mature implementation with enhanced capabilities:</p>
+
+<ul>
+  <li>Trained using reinforcement fine-tuning</li>
+  <li>Equipped with browser access for real-time information gathering</li>
+  <li>Closed system with no visibility into its underlying architecture</li>
+</ul>
+
+<h2 id="evaluation-methodology">Evaluation Methodology</h2>
+
+<p>Both systems were tasked with the same assignment: produce a comprehensive credit rating report for Trafigura Group. The resulting reports were then evaluated against three key criteria:</p>
+
+<ol>
+  <li><strong>Quality of Information</strong> (35 points): Breadth and depth of data, clarity of financial metrics</li>
+  <li><strong>Quality of the Report</strong> (35 points): Organization, thoroughness, overall presentation</li>
+  <li><strong>Justification of the Final Rating</strong> (30 points): How convincingly the report explains the assigned rating</li>
+</ol>
+
+<h2 id="results-analysis">Results Analysis</h2>
+
+<h3 id="report-structure-and-scope">Report Structure and Scope</h3>
+
+<p><strong>DeepCredit v0.1</strong> produced a well-organized report with six key segments:</p>
+
+<ul>
+  <li>Methodology &amp; Rationale</li>
+  <li>Data Gathering &amp; Analysis</li>
+  <li>Risk &amp; Creditworthiness</li>
+  <li>Information Gaps</li>
+  <li>Final Credit Rating</li>
+  <li>Detailed Report Structure</li>
+</ul>
+
+<p>The report stayed at a moderate level of detail, with concise summaries and a numbered reference list for citations.</p>
+
+<p><strong>OpenAI Deep Research</strong> delivered a comprehensive narrative that closely mirrored professional rating agency reports. It provided detailed explanation of methodologies, granular financial metrics, thorough risk assessment, and extensive rating justification with industry benchmarking.</p>
+
+<h3 id="information-quality">Information Quality</h3>
+
+<p><strong>DeepCredit v0.1</strong> (scored 25/35):</p>
+
+<ul>
+  <li>Cited key high-level figures (e.g., adjusted debt-to-equity ratio of -0.43x)</li>
+  <li>Referenced fraud losses and legal issues</li>
+  <li>Provided general information on liquidity and credit facilities</li>
+  <li>Lacked granular ratio calculations and detailed analysis</li>
+</ul>
+
+<p><strong>OpenAI Deep Research</strong> (scored 33/35):</p>
+
+<ul>
+  <li>Incorporated detailed metrics (e.g., total debt breakdown, revenue trends from $318B to $244B)</li>
+  <li>Calculated key financial ratios (debt-to-EBITDA, EBITDA/interest coverage)</li>
+  <li>Drew explicit comparisons to industry peers like Glencore and Bunge</li>
+  <li>Expanded on ESG factors, governance, compliance issues, and event risks</li>
+  <li>Provided historical context and forward-looking analysis</li>
+</ul>
+
+<h3 id="report-quality">Report Quality</h3>
+
+<p><strong>DeepCredit v0.1</strong> (scored 25/35):</p>
+
+<ul>
+  <li>Clear structure with well-organized sections</li>
+  <li>Suitable for quick reading with bullet points</li>
+  <li>Remained somewhat templated and outline-level</li>
+  <li>“Detailed Report Structure” section was more of a skeleton than a complete analysis</li>
+</ul>
+
+<p><strong>OpenAI Deep Research</strong> (scored 33/35):</p>
+
+<ul>
+  <li>Logical narrative flow from methodology to final conclusion</li>
+  <li>Extensive use of subheadings and bullet points</li>
+  <li>Effectively tied data to rating rationale</li>
+  <li>Thorough explanation of each dimension of credit risk</li>
+  <li>Professional-quality analysis similar to formal rating agency reports</li>
+</ul>
+
+<h3 id="rating-justification">Rating Justification</h3>
+
+<p>Both systems assigned Trafigura a <strong>BBB+ rating with a stable outlook</strong>, with similar core justifications:</p>
+
+<ul>
+  <li>Strong liquidity via large credit facilities</li>
+  <li>Sizable equity base and ongoing profitability</li>
+  <li>Recent fraud losses and legal issues as manageable concerns</li>
+  <li>Inherent volatility in commodity trading</li>
+</ul>
+
+<p>However, the depth of justification differed significantly:</p>
+
+<p><strong>DeepCredit v0.1</strong> (scored 20/30):</p>
+
+<ul>
+  <li>Succinct explanation with high-level bullet points</li>
+  <li>Brief mentions of strengths and weaknesses</li>
+  <li>Limited detail on how specific metrics supported the rating</li>
+</ul>
+
+<p><strong>OpenAI Deep Research</strong> (scored 27/30):</p>
+
+<ul>
+  <li>Multiple paragraphs of detailed rating rationale</li>
+  <li>Benchmarked against known rating agency frameworks</li>
+  <li>Explained how specific financial metrics translated into the BBB+ rating</li>
+  <li>Provided in-depth reasoning for why the rating wasn’t higher or lower</li>
+</ul>
+
+<h3 id="overall-scoring">Overall Scoring</h3>
+
+<p><strong>DeepCredit v0.1</strong>: ~70-75/100<br />
+<strong>OpenAI Deep Research</strong>: ~93/100</p>
+
+<h2 id="key-findings-and-implications">Key Findings and Implications</h2>
+
+<p>The experiment clearly demonstrated that OpenAI’s Deep Research feature significantly outperformed DeepCredit v0.1. This outcome, while not unexpected given the relative maturity of the systems, raises important questions about the current state and future potential of AI in credit analysis:</p>
+
+<ol>
+  <li><strong>Information Depth is Critical</strong>: The ability to gather, synthesize, and present detailed financial data and contextual information dramatically enhances the credibility of credit assessments.</li>
+  <li><strong>Narrative Structure Matters</strong>: The OpenAI Deep Research report’s cohesive narrative flow made complex financial information more accessible and convincing compared to the more segmented approach of DeepCredit.</li>
+  <li><strong>Comparative Analysis Adds Value</strong>: Explicit benchmarking against industry peers and rating frameworks significantly strengthens rating justifications.</li>
+  <li><strong>Potential for AI in Credit Analysis</strong>: The quality of the OpenAI Deep Research report suggests that with proper prompt engineering, AI systems may already be approaching reliability for preliminary credit assessments.</li>
+</ol>
+
+<h2 id="next-research-steps">Next Research Steps</h2>
+
+<p>Based on these findings, I’ve identified several promising avenues for advancing our AI-powered credit analysis capabilities:</p>
+
+<ol>
+  <li><strong>Explore OpenAI Deep Research’s Full Potential</strong>: While Deep Research is a closed product that can’t be modified internally, we can experiment with more sophisticated prompting strategies to optimize its credit analysis capabilities.</li>
+  <li><strong>Establish Robust Evaluation Framework</strong>: Set up comprehensive evaluation protocols using OpenAI Deep Research and actual credit rating agency reports as benchmarks, with an LLM judge comparing them against standardized scoring criteria.</li>
+  <li><strong>Enhance DeepCredit’s Tooling</strong>: Add PDF parsing and code interpreter capabilities to enable DeepCredit to work with a broader range of financial documents and perform quantitative analysis.</li>
+  <li><strong>Refine Agent System Prompts</strong>: Systematically improve the prompts for each agent in the DeepCredit architecture to measure incremental performance gains.</li>
+  <li><strong>Experiment with Fine-Tuning</strong>: Begin testing fine-tuning approaches for individual agents using existing tools to improve specialized performance.</li>
+  <li><strong>Explore End-to-End Fine-Tuning</strong>: Request research access to OpenAI’s Reinforcement Fine-Tuning API (which was used to train OpenAI’s Deep Research) to potentially implement end-to-end fine-tuning of the entire agentic workflow.</li>
+</ol>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>This experiment provides valuable insights into the current state and future potential of AI-powered credit analysis. While DeepCredit v0.1 demonstrates promise as a structured approach to credit research, the superior performance of OpenAI’s Deep Research highlights both the challenges ahead and the considerable potential for AI in this domain.</p>
+
+<p>The next phase of research will focus on narrowing this performance gap by enhancing DeepCredit’s capabilities and exploring more sophisticated prompting strategies for Deep Research. The end goal remains developing reliable AI-powered credit analysis tools that can support our organization’s financial decision-making processes with comprehensive, well-reasoned assessments.</p>
+
+    </div>
+
+    <div class="post-navigation">
+      <a href="/" class="back-to-blog">← Back to blog</a>
+    </div>
+  </div>
+</article> 
+      </div>
+    </main><footer class="site-footer h-card">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <h2 class="footer-heading">Sometimes Models Just Do Things</h2>
+        <p>Where AI meets impatience, management consulting meets existential crisis, and prompts meet their match.</p>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <h3>Categories</h3>
+        <ul class="category-list">
+          <li><a href="/categories/industry-developments">Industry Developments</a></li>
+          <li><a href="/categories/experiments">Experiments</a></li>
+          <li><a href="/categories/tools">Tools</a></li>
+          <li><a href="/categories/tutorials">Tutorials</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Ben Reeve</p>
+    </div>
+  </div>
+</footer> </body>
+</html> 
