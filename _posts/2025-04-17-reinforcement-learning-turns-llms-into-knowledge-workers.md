@@ -8,7 +8,6 @@ image: /assets/images/posts/FBBF0871-43BB-4776-A35B-54EA60B6F326.png
 ---
 
 # Reinforcement Learning Turns Large Language Models into Real Knowledge-Workers
-## A semi-technical deep-dive for practitioners
 
 One of the great joys of observing artificial intelligence development is watching experts reluctantly anthropomorphize their creations. "The model isn't *thinking*," they insist while presenting research titled "Fast and Slow Thinking in Large Language Models." It's like watching parents who swore they'd never baby-talk their children dropping to all fours making airplane noises at mealtime. Let's explore how reinforcement learning has transformed language models from glorified autocomplete into something that – while not conscious – certainly warrants some carefully hedged anthropomorphism.
 
