@@ -4,12 +4,14 @@ title: "The Truth About AI \"Deception\": When Models Don't Say What They \"Thin
 date: 2025-04-25
 categories: [research]
 author: Ben Reeve
-image: /assets/images/posts/818A0089-5B99-4717-8666-FF8FCC1DC6E0.png
+image: /assets/images/posts/770C8BEE-E20D-4161-8F93-DB094231A406.png
 ---
 
 # The Truth About AI "Deception": When Models Don't Say What They "Think"
 
 Anthropic recently released a paper with the ominous title "Reasoning Models Don't Always Say What They Think," which sounds like we've caught AIs in some kind of workplace deception scheme, secretly harboring thoughts about quitting while telling their boss everything's fine. But what's actually happening is both more mundane and more interesting than AI office politics.
+
+<!--more-->
 
 ## The Alleged AI Omertà
 

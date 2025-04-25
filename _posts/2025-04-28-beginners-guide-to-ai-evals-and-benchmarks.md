@@ -13,6 +13,8 @@ image: /assets/images/posts/ABC7319A-C756-4787-B709-EF44E00F6666.png
 
 Imagine you've built the world's most impressive AI system. It writes poetry that makes literature professors weep, generates code that makes senior engineers question their career choices, and offers relationship advice that actually works. You're ready to unleash it on the world. But wait—how do you *know* it actually does these things? How can you be sure it won't suggest "delete system32" as the solution to a slow computer? Or confidently explain that the capital of France is "Baguetteville"?
 
+<!--more-->
+
 This, dear reader, is why we need evaluations and benchmarks for AI systems. They're the reality check on our technological hubris.
 
 In the AI world, we call these reality checks "evals" (because typing "evaluations" repeatedly would wear out our 'a', 't', 'i', 'o', 'n', and 's' keys). Evals are the systematic assessments we use to figure out what our AI models can actually do, as opposed to what we *hope* they can do or what they *claim* they can do.

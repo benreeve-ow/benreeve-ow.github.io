@@ -11,6 +11,8 @@ image: /assets/images/posts/34A759A8-64AD-4728-9952-0C903176E131.png
 
 There's something delightful about reading two wildly different visions of our AI future published almost simultaneously. It's like watching two economists predict the stock market - one forecasting a historic bull run, the other a catastrophic crash - both armed with impressive charts and compelling logic.[^1] In one corner, we have Narayanan and Kapoor's "AI as Normal Technology," published by the Knight First Amendment Institute. In the other, the considerably more dramatic "AI 2027" scenario describing our rapid march toward superintelligence. 
 
+<!--more-->
+
 Let's explore these competing narratives, shall we? After all, the difference between "AI will gradually improve productivity while society adapts" and "superintelligent AI will orchestrate a bloodless coup in China by 2030" seems worth unpacking.
 
 ## The Pace Problem: Gradual Diffusion vs. Racing to the Singularity

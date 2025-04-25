@@ -18,7 +18,7 @@ show_excerpts: true
 categories: [industry-developments, experiments, tools, tutorials]
 
 # Pagination
-paginate: 6
+paginate: 10
 paginate_path: "/page:num/"
 
 # Excerpt separator
