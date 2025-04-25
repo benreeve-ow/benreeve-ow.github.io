@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Two AI Futures Walk Into a Bar; One Says \"I'll Transform Everything,\" the Other Says \"I'm Just a Toaster\""
-date: 2025-04-26
+date: 2025-04-25
 categories: [research]
 author: Ben Reeve
 image: /assets/images/posts/34A759A8-64AD-4728-9952-0C903176E131.png

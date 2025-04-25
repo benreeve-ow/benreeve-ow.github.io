@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A Beginner's Guide to AI Evals and Benchmarks"
-date: 2025-04-28
+date: 2025-04-25
 categories: [tutorials]
 author: Ben Reeve
 image: /assets/images/posts/ABC7319A-C756-4787-B709-EF44E00F6666.png
