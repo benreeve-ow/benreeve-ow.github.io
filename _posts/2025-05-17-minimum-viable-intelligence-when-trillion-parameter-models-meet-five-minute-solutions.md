@@ -4,7 +4,7 @@ title: "Minimum Viable Intelligence: When Trillion-Parameter Models Meet Five-Mi
 date: 2025-05-17
 categories: [minimum-viable-intelligence]
 author: Ben Reeve
-image: /assets/images/posts/58263AEA-A828-42E0-915A-AD8E42A67D51.png
+image: /assets/images/posts/Screenshot 2025-05-17 at 17.37.01.png
 ---
 
 # Minimum Viable Intelligence: When Trillion-Parameter Models Meet Five-Minute Solutions
@@ -26,6 +26,10 @@ But I've stumbled upon a fourth option that weaponizes AI to compensate for my i
 ## The Cognitive Arbitrage Play
 
 What you're seeing in these screenshots is the academic equivalent of getting someone else to do your homework. I've asked ChatGPT to:
+
+![ChatGPT Query](/assets/images/posts/Screenshot 2025-05-17 at 17.37.01.png)
+
+![ChatGPT Response](/assets/images/posts/Screenshot 2025-05-17 at 17.38.18.png)
 
 1. Set a daily reminder at 8am
 2. Explain one paper per day, starting with remedial concepts a toddler could grasp
