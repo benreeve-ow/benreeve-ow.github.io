@@ -7,8 +7,6 @@ author: Ben Reeve
 image: /assets/images/posts/58263AEA-A828-42E0-915A-AD8E42A67D51.png
 ---
 
-<!-- Email-friendly version starts here -->
-<div class="email-friendly">
 # Minimum Viable Intelligence: When Trillion-Parameter Models Meet Five-Minute Solutions
 
 I recently found myself staring at a list of AI research papers that Ilya Sutskever claimed are "all you need to understand what's really going on in AI in 2025." First up: "The First Law of Complexodynamics: A quest to formalise why 'interesting structure' peaks midway through a closed system's evolution while entropy keeps rising."
@@ -66,10 +64,9 @@ There's something oddly liberating about this approach. I'm not pretending I'll 
 Perhaps that's the real insight from complexodynamics: optimal learning happens not through complete immersion or willful ignorance, but at that sweet spot where minimal effort meets maximum appearance of competence.
 
 Just don't tell Ilya I'm learning his recommended papers in five-minute increments between Slack notifications. Or do tell him, because I suspect he's doing the same thing with some other field.
-</div>
 
-<!-- Web version with enhanced formatting starts here -->
-<div class="web-version">
+<!-- Hidden email-friendly version -->
+<div class="email-friendly" style="display: none;">
 # Minimum Viable Intelligence: When Trillion-Parameter Models Meet Five-Minute Solutions
 
 I recently found myself staring at a list of AI research papers that Ilya Sutskever claimed are "all you need to understand what's really going on in AI in 2025." First up: "The First Law of Complexodynamics: A quest to formalise why 'interesting structure' peaks midway through a closed system's evolution while entropy keeps rising."
@@ -135,19 +132,6 @@ Just don't tell Ilya I'm learning his recommended papers in five-minute incremen
 </div>
 
 <style>
-.email-friendly {
-    display: none;
-}
-
-@media print {
-    .web-version {
-        display: none;
-    }
-    .email-friendly {
-        display: block;
-    }
-}
-
 .copy-button-container {
     position: fixed;
     bottom: 20px;
