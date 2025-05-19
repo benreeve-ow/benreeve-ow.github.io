@@ -4,7 +4,6 @@ title: "Long-Context Financial QA: An Empirical Evaluation of Large Language Mod
 date: 2025-05-19
 categories: [research]
 author: Ben Reeve
-image: /assets/images/posts/58263AEA-A828-42E0-915A-AD8E42A67D51.png
 ---
 
 # Long-Context Financial QA: An Empirical Evaluation of Large Language Models on Financial Document Analysis
