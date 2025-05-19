@@ -2,7 +2,7 @@
 layout: post
 title: "DeepCredit Experiment: Evaluating LLM Performance on Hard CRR Questions"
 date: 2025-05-12
-categories: [industry-insights]
+categories: [experiments]
 author: Ben Reeve
 image: /assets/images/posts/Screenshot 2025-05-12 at 23.57.25.png
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "Long-Context Financial QA: An Empirical Evaluation of Large Language Models on Financial Document Analysis"
 date: 2025-05-19
-categories: [research]
+categories: [experiments]
 author: Ben Reeve
 ---
 
