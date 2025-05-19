@@ -153,15 +153,13 @@ Future work should explore this relationship more systematically by testing perf
 
 ## 5. References
 
-1. Chen, Z., Chen, W., Smiley, C., Shah, S., Borova, I., Langdon, D., Moussa, R., Beane, M., Huang, T.-H., Routledge, B., & Wang, W. Y. (2021). FinQA: A dataset of numerical reasoning over financial data. In Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing.
+1. Chen, Z., Chen, W., Smiley, C., Shah, S., Borova, I., Langdon, D., Moussa, R., Beane, M., Huang, T.-H., Routledge, B., & Wang, W. Y. (2021). FinQA: A dataset of numerical reasoning over financial data. In Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing. [https://arxiv.org/pdf/2109.00122](https://arxiv.org/pdf/2109.00122)
 
-2. Reddy, V., Koncel-Kedziorski, R., Lai, V. D., Krumdick, M., Lovering, C., & Tanner, C. (2024). DocFinQA: A Long-Context Financial Reasoning Dataset. arXiv preprint.
+2. Reddy, V., Koncel-Kedziorski, R., Lai, V. D., Krumdick, M., Lovering, C., & Tanner, C. (2024). DocFinQA: A Long-Context Financial Reasoning Dataset. arXiv preprint. [https://arxiv.org/pdf/2401.06915](https://arxiv.org/pdf/2401.06915)
 
-3. "Why 'just throw the whole 120 k-word 10-K into the prompt' under-performs" (2024).
+3. HuggingFace Dataset: https://huggingface.co/datasets/kensho/DocFinQA
 
-4. HuggingFace Dataset: https://huggingface.co/datasets/kensho/DocFinQA
-
-5. HuggingFace Dataset: https://huggingface.co/datasets/Aiera/finqa-verified
+4. HuggingFace Dataset: https://huggingface.co/datasets/Aiera/finqa-verified
 
 ## Appendix A: Methodology
 
